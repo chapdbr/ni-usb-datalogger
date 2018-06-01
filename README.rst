@@ -1,3 +1,7 @@
-# ni-usb-datalogger
-NI USB DAQ data logger
-To install using pip, use this command: py -m pip install https://github.com/chapdbr/ni-usb-datalogger.git
+NI USB DAQ DATALOGGER
+=====================
+This software provides data logging capabilities and real-time plotting
+of incoming data from a NI DAQ hooked up with an ATI FT sensor.
+
+To install using pip, use the following command: py -m pip install https://github.com/chapdbr/ni-usb-datalogger.git
+It will install all the required dependencies.
