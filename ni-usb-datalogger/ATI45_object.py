@@ -109,8 +109,8 @@ def uinput_plot_forces():
             repeat = False
             plotting_forces = True
             print('Starting the plotting process...')
-            #p1 = subprocess.Popen(['python', 'plot_forces.py', 'ati45.filename'])
-            p1 = subprocess.Popen([plot_forces_target, 'ati45.filename']) #if building exe file
+            p1 = subprocess.Popen(['python', 'plot_forces.py', 'ati45.filename'])
+            #p1 = subprocess.Popen([plot_forces_target, 'ati45.filename']) #if building exe file
         elif uinput == 'n':
             repeat = False
             plotting_forces = False
@@ -128,8 +128,8 @@ def uinput_plot_pos():
             repeat = False
             plotting_pos = True
             print('Starting the plotting process...')
-            #p2 = subprocess.Popen(['python', 'plot_position.py', 'ati45.filename'])
-            p2 = subprocess.Popen([plot_pos_target, 'ati45.filename']) #if building exe file
+            p2 = subprocess.Popen(['python', 'plot_position.py', 'ati45.filename'])
+            #p2 = subprocess.Popen([plot_pos_target, 'ati45.filename']) #if building exe file
         elif uinput == 'n':
             repeat = False
             plotting_pos = False
@@ -156,6 +156,7 @@ if __name__ == '__main__':
     ati45.init_stream()
     ati45.tare()
     ati45.init_time()
+    ati45.read_data()
 
     uinput_plot_forces()
     uinput_plot_pos()
