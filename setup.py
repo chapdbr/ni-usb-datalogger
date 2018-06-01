@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='Load_cell',
+    name='ni-usb-datalogger',
     version='1.0',
     packages=['ni-usb-datalogger'],
     install_requires=['nidaqmx', 'numpy', 'matplotlib'],
