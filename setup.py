@@ -4,7 +4,7 @@ setup(
     name='Load_cell',
     version='1.0',
     packages=['ni-usb-datalogger'],
-    install_requires=['nidaqmx', 'numpy', 'msvcrt', 'matplotlib'],
+    install_requires=['nidaqmx', 'numpy', 'matplotlib'],
     url='https://github.com/chapdbr/NI-USB-DAQ-DATA-LOGGER',
     license='MIT',
     author='Bruno Chapdelaine',
