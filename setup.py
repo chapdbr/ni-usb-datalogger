@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='Load_cell',
     version='1.0',
-    packages=['NI-USB-DATA-LOGGER'],
+    packages=['ni-usb-datalogger'],
     install_requires=['nidaqmx', 'numpy', 'time', 'datetime', 'subprocess', 'os', 'msvcrt', 'math', 'matplotlib', 'glob'],
     url='https://github.com/chapdbr/NI-USB-DAQ-DATA-LOGGER',
     license='MIT',
