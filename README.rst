@@ -7,4 +7,4 @@ the FT sensor. The 2D plot displays the forces
 measured by the sensor in the style of an oscilloscope.
 
 To install using pip, use the following command: py -m pip install
-https://github.com/chapdbr/ni-usb-datalogger.git
+git+https://github.com/chapdbr/ni-usb-datalogger.git
