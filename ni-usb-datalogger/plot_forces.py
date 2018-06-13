@@ -29,9 +29,9 @@ def read_data():
     fy = float(data_out[2])
     fz = float(data_out[3])
     fr = float(data_out[4])
-    #mx = data_out[4]
-    #my = data_out[5]
-    #mz = data_out[6]
+    #mx = data_out[5]
+    #my = data_out[6]
+    #mz = data_out[7]
 
 def read_fx():
     global fx
