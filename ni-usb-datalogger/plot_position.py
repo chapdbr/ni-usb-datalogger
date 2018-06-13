@@ -59,7 +59,7 @@ class Scope(object):
         self.ax.set_ylim(-15, 15)
         self.ax.set_zlim(0, 15)
         #self.ax.view_init(elev=30, azim=60)
-        self.ax.view_init(elev=15, azim=130)
+        self.ax.view_init(elev=30, azim=-37.5)
 
 def plot_data(filename_in):
     global filename
