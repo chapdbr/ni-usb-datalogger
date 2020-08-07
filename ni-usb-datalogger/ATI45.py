@@ -106,14 +106,13 @@ class sensor(object):
 		self.log.close()
 
 def uinput_plot_forces():
-	"""Start forces plot with user input."""
+	"""Ask user to plot forces."""
 	print("Do you want to plot the forces? <y/n>: ")
 	repeat = True
 	while repeat:
 		uinput = input()
 		if uinput == 'y':
-			dir_path = os.path.dirname(os.path.realpath(__file__))
-			plot_forces_target = dir_path + '\plot_forces.exe'
+			dir_path = os.path.dirname(os.path.realpath(__file__)) # Dir path on Windows
 			repeat = False
 			plotting_forces = True
 			print('Starting the plotting process...')
@@ -121,19 +120,19 @@ def uinput_plot_forces():
 		elif uinput == 'n':
 			repeat = False
 			plotting_forces = False
+			p1 = False
 		else:
 			print("Please press the right key.")
-return plotting_forces, p1
+	return plotting_forces, p1
 
 def uinput_plot_pos():
-	"""Start position plot with user input."""
+	"""Ask user to plot position."""
 	print("Do you want to plot the position? <y/n>: ")
 	repeat = True
 	while repeat:
 		uinput = input()
 		if uinput == 'y':
 			dir_path = os.path.dirname(os.path.realpath(__file__)) # Dir path on Windows
-			plot_pos_target = dir_path + '\plot_position.exe'
 			repeat = False
 			plotting_pos = True
 			print('Starting the plotting process...')
@@ -141,9 +140,10 @@ def uinput_plot_pos():
 		elif uinput == 'n':
 			repeat = False
 			plotting_pos = False
+			p2 = False
 		else:
 			print("Please press the right key.")
-return plotting_pos, p2
+	return plotting_pos, p2
 
 def read_n_log_data():
 	"""Read and log data until ESC key is pressed."""
