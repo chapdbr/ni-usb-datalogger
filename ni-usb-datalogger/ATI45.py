@@ -28,7 +28,7 @@ class sensor(object):
 		self.r = r # length of the tether
 
 	def tare(self):
-		"""Tare with user input"""
+		"""Ask user to tare."""
 		self.tare_input = np.empty([6,])
 		print("Press ENTER to tare")
 		while input() != '':
